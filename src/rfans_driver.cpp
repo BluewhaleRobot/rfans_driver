@@ -76,9 +76,9 @@ Rfans_Driver::~Rfans_Driver()
 int Rfans_Driver::spinOnce()
 {
     if (worRealtime()) {
-        spinOnceRealtime();
+      return  spinOnceRealtime();
     } else {
-        spinOnceSimu();
+      return  spinOnceSimu();
     }
 }
 
